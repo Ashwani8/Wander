@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp">
+
+
+<LinearLayout
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:id="@+id/imageView"
         android:src="@drawable/college_logo"/>
     <TextView
         android:layout_width="wrap_content"
@@ -17,10 +25,11 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/story"
-        android:text="@string/story_placeholder"
+        android:id="@+id/info"
+        android:text="@string/info_placeholder"
         android:padding="8dp"
         style="@style/TextAppearance.AppCompat.Subhead" />
 
 
 </LinearLayout>
+</android.support.v7.widget.CardView>
